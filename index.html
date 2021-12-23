@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    button {
+      background-color: #5fce72;
+      color: white;
+      padding: 5px 20px;
+      border: none;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <button>跳转小程序</button>
+
+  <script>
+    const btn = document.querySelector('button')
+    btn.onclick = navigateToMP;
+    function navigateToMP() {
+      location.href = 'weixin://dl/business/?t=U5XwKwnGjpk';
+    }
+    // navigateToMP();
+  </script>
+</body>
+</html>
